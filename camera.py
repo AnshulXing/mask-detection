@@ -28,4 +28,5 @@ class VideoCamera(object):
             if n==1: cv2.putText(frame,m,(x,y),font,1,(0,255,0),2)
         #res = cv2.resize(frame,None,fx=1.6, fy=1.5, interpolation = cv2.INTER_CUBIC)
         ret,jpeg=cv2.imencode('.jpg',frame)
+        print("Hello")
         return jpeg.tobytes()
